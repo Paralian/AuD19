@@ -1,2 +1,2 @@
-public class SortTools{
+public class SortTools {
 }
