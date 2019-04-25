@@ -5,6 +5,7 @@ import static java.lang.System.nanoTime;
 
 public class SortTools {
     
+    //1a
     //increasing sequence from 1 to n, of length n
     public static int[] createSequenceInc(int n) {
         int[] seqInc = new int[n];
@@ -14,6 +15,7 @@ public class SortTools {
         return seqInc;
     }
     
+    
     //decreasing sequence from n to 1, of length n
     public static int[] createSequenceDec(int n) {
         int[] seqDec = new int[n];
@@ -22,6 +24,7 @@ public class SortTools {
         }
         return seqDec;
     }
+    
     
     //random sequence from 1 to n, of length n
     public static int[] createSequenceRand(int n) {
@@ -33,6 +36,7 @@ public class SortTools {
         return seqRand;
     }
     
+    
     //alternating sequence of 1s and 2s, of length n
     public static int[] createSequenceAlt(int n) {
         int[] seqAlt = new int[n];
@@ -42,6 +46,7 @@ public class SortTools {
         return seqAlt;
     }
     
+    //1b
     public static void insertionSort(int[] A) {
         
         for (int j = 1; j < A.length; j++) {
@@ -55,6 +60,10 @@ public class SortTools {
         }
     }
     
+    //1d
+    //TODO: Generics
+    
+    //1c
     public static void main(String[] args) {
         
         int sizes[] = {100, 1000, 10000, 100000, 200000};
@@ -70,7 +79,7 @@ public class SortTools {
             
         }
         /*
-        Times for sequence of size 100 are:
+            Times for sequence of size 100 are:
             202400
             186100
             183300
