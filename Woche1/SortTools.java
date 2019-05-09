@@ -61,7 +61,20 @@ public class SortTools {
     }
     
     //1d
-    //TODO: Generics
+    
+    public static <T extends Comparable<T>> T[] insertionSortGen(T[] A) {
+        
+        for (int j = 1; j < A.length; j++) {
+            T s = A[j];
+            int i = j - 1;
+            while (i >= 0 && A[i].compareTo(s) > 0) {
+                A[i + 1] = A[i];
+                i--;
+            }
+            A[i + 1] = s;
+        }
+        return A;
+    }
     
     //1c
     public static void main(String[] args) {

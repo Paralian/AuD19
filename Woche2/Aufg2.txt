@@ -1,0 +1,22 @@
+//a
+Eingabe: Array A
+
+Ausgabe: Differenz zwischen max. und min. Wert des Arrays A.
+
+Algorithmus:
+l := Länge des Arrays A;
+i := 1;
+max := 0;
+min := 0;
+while (i < l) {
+    if A[i] > max then max := A[i]
+    else if A[i] < min then min := A[i]
+    i++;
+    }
+return (max-min)
+
+//b
+es gilt immer: max >= min,
+max kann nur größer werden
+min kann nur kleiner werden
+falls Array aus gleichen Elementen besteht, dann ist diff(max-min)=0
